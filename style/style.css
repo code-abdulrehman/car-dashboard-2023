@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Oswald&display=swap');
+
+:root {
+    --primary: #cfcfcf;
+    --font: #222;
+    --white: #fff;
+    --dark: #808080;
+    --light: #c4c4c4;
+    --shadow: #00000099;
+    --font-Kanit: 'Kanit', sans-serif;
+    --font-Oswald: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background: var(--dark);
+    color: var(--font);
+}
+body {
+    background: var(--primary);
+    text-align: center;
+    overflow-x: hidden;
+    font-family: var(--font-Oswald);
+}
+
+h1 {
+    font-family: var(--font-Kanit);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font);
+}
+
+marquee {
+    color: red;
+}
+
+/* main start */
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container start */
+main .container {
+    position: relative;
+    width: 90%;
+    height: 85%;
+    background: var(--white);
+    background-image: url('/img/1596.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 12px 12px 0px 0 var(--shadow);
+    border: 1px solid var(--primary);
+}
+
+/* container in header */
+main .container .header {
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.header .header-area {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* header in left area */
+.header .header-area .navBar {
+    width: 30%;
+}
+
+.header-area .navBar ol {
+    width: 80%;
+    gap: 5px;
+}
+
+.header-area .navBar ol .filters {
+    border: 2px solid var(--font);
+    width: 20%;
+    padding: 2px;
+    height: 20px;
+    font-size: 10px;
+    color: var(--primary);
+    background: var(--font);
+    background-image: url('/img/keyboard_double_arrow_down_FILL0_wght400_GRAD0_opsz24.svg');
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position-x: center;
+    cursor: pointer;
+}
+
+.header-area .navBar ol .title {
+    border: 2px solid var(--font);
+    width: 80%;
+}
+
+/* header in right area */
+.header .header-area .duration {
+    width: 60%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header-area .duration ol {
+    margin-right: 10px;
+    width: 70%;
+    justify-content: end;
+    gap: 5px;
+}
+
+.header-area .duration ol li {
+    padding: 0px 10px;
+    border: 2px solid var(--font);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.header-area .duration ol .active {
+    background: var(--font);
+    color: var(--white);
+    box-shadow: 3px 3px 0px 0 var(--shadow);
+}
+
+.header .header-area,
+.header .header-area ol {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* header end */
+
+/* Sales area start */
+
+.container .sales-bar {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.sales-bar .sales-area {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.sales-bar .sales-area li {
+    width: 20%;
+    display: inline-flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sales-bar .sales-area li span {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Sales area End */
+
+/* bt-empty :start */
+.container .bt-empty {
+    width: 100%;
+    height: 50vh;
+    /* background-color: rgba(253, 253, 253, 0.212); */
+}
+
+/* bt-empty :end */
+
+/* charts-bar :start */
+.container .charts-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.charts-bar .charts-area {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.charts-area .rating {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    position: relative;
+    bottom: 20px;
+}
+
+.charts-area .rating span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.charts-area li {
+    /* width: 30%; */
+    height: 100px;
+}
+
+.charts-area li canvas {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+/* charts-bar :end */
+
+/* mediascreen */
+@media screen and (max-width:650px) {
+    .header-area {
+        flex-direction: column;
+        justify-content: end;
+        height: 10vh;
+        width: 100%;
+        width: 300px;
+    }
+
+    .header-area li {
+        width: 100%;
+        height: 50%;
+        justify-content: end;
+        margin: 0;
+    }
+
+    .header-area .duration ol li:nth-child(1),
+    .header-area .duration ol li:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .header-area {
+        flex-direction: column;
+        justify-content: end;
+        height: 10vh;
+    }
+
+    .header-area li {
+        width: 100%;
+        font-size: 12px;
+        justify-content: end;
+    }
+
+    ul:nth-child(1) li:nth-child(1) ol {
+        font-size: 14px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    ul:nth-child(1) li:nth-child(1) ol .filters {
+        width: 20%;
+    }
+
+    ul:nth-child(1) li:nth-child(1) ol .title {
+        width: 80%;
+    }
+
+    .header-area .duration {
+        margin-left: 100px;
+    }
+}

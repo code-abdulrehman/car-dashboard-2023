@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+
+    <main>
+        <!-- Container -->
+        <div class="container">
+
+            <!-- header start -->
+            <div class="header">
+                <ul class="header-area">
+                    <!-- navBar -->
+                    <li class="navBar">
+                        <ol>
+                            <li class="filters" id="FiltersAndSearch"></li>
+                            <li class="title">Dashboard</li>
+                        </ol>
+                    </li>
+
+                    <!-- years Duration -->
+                    <li class="duration">
+                        <ol>
+                            <img src="./img/calendar-day-svgrepo-com.svg" alt="years" width="25">
+                            <li>2020</li>
+                            <li>2021</li>
+                            <li>2022</li>
+                            <li class="active">2023</li>
+                            <li>2024</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <!-- header end -->
+
+            <!-- Slaes Area strat -->
+            <div class="sales-bar">
+                <ul class="sales-area">
+
+                    <li>
+                        <img src="img/car-locked-svgrepo-com.svg" alt="lock" width="30">
+                        <span>
+                            <b>99.99%</b>
+                            <small>Security</small>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="img/wheel-svgrepo-com.svg" alt="wheels" width="30">
+                        <span>
+                            <b>89.4%</b>
+                            <small>Growing</small>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="img/car-insurance-svgrepo-com.svg" alt="insurance" width="30">
+                        <span>
+                            <b>76.9%</b>
+                            <small>Insurance</small>
+                        </span>
+                    </li>
+
+                    <li>
+                        <img src="img/cart-shopping-fast-svgrepo-com.svg" alt="shiping" width="30">
+                        <span>
+                            <b>10K</b>
+                            <small>Sales</small>
+                        </span>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Slaes Area End -->
+
+            <!-- between empty start -->
+            <div class="bt-empty">
+
+            </div>
+            <!-- between empty end
+             -->
+            <!-- visu-charts start -->
+            <div class="charts-bar">
+                <ul class="charts-area">
+
+                    <li class="rating">
+                        rating
+                        <span>
+                            <b>3.5</b>
+                            <small>
+                                <img src="img/rated.svg" alt="star" width="18">
+                                <img src="img/rated.svg" alt="star" width="18">
+                                <img src="img/rated.svg" alt="star" width="18">
+                                <img src="img/half-rated.svg" alt="star" width="18">
+                                <img src="img/unrated.svg" alt="star" width="18">
+                            </small>
+                        </span>
+
+                    </li>
+                    <li>
+                        <canvas id="party"></canvas>
+                    </li>
+                    <li>
+                        <canvas id="totaSales"></canvas>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- visu-charts end -->
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

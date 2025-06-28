@@ -1,0 +1,7 @@
+IMAGES ::
+/img/calendar-day-svgrepo-com.svg
+/img/keyboard_double_arrow_down_FILL0_wght400_GRAD0_opsz24.svg
+img/car-locked-svgrepo-com.svg
+img/wheel-svgrepo-com.svg
+img/car-insurance-svgrepo-com.svg
+img/cart-shopping-fast-svgrepo-com.svg
