@@ -97,7 +97,7 @@ main .container .header {
     font-size: 10px;
     color: var(--primary);
     background: var(--font);
-    background-image: url('/img/keyboard_double_arrow_down_FILL0_wght400_GRAD0_opsz24.svg');
+    background-image: url('img/keyboard_double_arrow_down_FILL0_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     background-clip: content-box;
     background-position-x: center;
