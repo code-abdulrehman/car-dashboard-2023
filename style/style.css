@@ -58,7 +58,7 @@ main .container {
     width: 90%;
     height: 85%;
     background: var(--white);
-    background-image: url('/img/1596.jpg');
+    background-image: url('img/1596.jpg');
     background-position: center;
     background-size: cover;
     box-shadow: 12px 12px 0px 0 var(--shadow);
